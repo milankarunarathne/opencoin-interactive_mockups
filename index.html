@@ -59,7 +59,29 @@
         <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>
       </div> <!-- End Internal Header -->
       <div role="main" class="ui-content">
+        <label for="basic1">Amount:</label>
+  				<input type="text" name="amount" id="basic1" value="" />
+      		<label for="select-choice-0" class="select">Currency:</label>
+      		<select name="select-choice-0" id="select-choice-0">
+      		   <option value="standard">Euro</option>
+      		   <option value="rush">USD</option>
+      		   <option value="express">Baachbucks</option>
+      		   <option value="overnight">Charma</option>
+      		</select>
+      		<label for="basic1">Reference:</label>
+      		<input type="text" name="reference" id="basic1" value="" />
+      		<fieldset data-role="controlgroup" data-type="horizontal" >
+      			<legend>Send via:</legend>
+      		     	<input type="radio" name="radio-choice" id="radio-choice-1" value="choice-1" checked="checked" />
+      		     	<label for="radio-choice-1">Internet</label>
 
+      		     	<input type="radio" name="radio-choice" id="radio-choice-2" value="choice-2"  />
+      		     	<label for="radio-choice-2">Bluetooth</label>
+
+      		     	<input type="radio" name="radio-choice" id="radio-choice-3" value="choice-3"  />
+      		     	<label for="radio-choice-3">Copy'n'paste</label>
+      		</fieldset>
+      		<a href="#" data-role="button" data-icon="star">Pay</a>
       </div> <!-- End Content -->
     </div> <!-- End of PAY page -->
 
