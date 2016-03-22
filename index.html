@@ -21,16 +21,20 @@
         $( "body > [data-role='panel']" ).panel();
         $( "body > [data-role='panel'] [data-role='listview']" ).listview();
       });
+      $( document ).one( "pageshow", function() {
+  			$( "body > [data-role='header']" ).toolbar();
+  		});
   	</script>
   </head>
   <body>
-    <div id="main" class="jqm-demos" data-role="page" data-theme="b" data-add-back-btn="true">
-      <div data-role="header" data-position="fixed">
-        <h1>OpenCoin Wallet</h1>
-        <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>
-      </div> <!-- End Header -->
+    <div data-role="header" data-position="fixed" data-theme="a">
+      <h1>OpenCoin Wallet</h1>
+      <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>
+    </div> <!-- End External Header -->
 
-      <div data-role="content">
+    <div id="home" class="jqm-demos" data-role="page" data-theme="b" data-add-back-btn="true">
+
+      <div role="main" class="ui-content">
 
       </div> <!-- End Content -->
       <div data-role="footer">
