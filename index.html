@@ -61,8 +61,27 @@
     </div> <!-- End of HOME page -->
 
     <div id="address_book" class="" data-role="page" data-theme="a" data-add-back-btn="true">
+      <div data-role="header" data-position="fixed" data-theme="a">
+        <h2>Address Book</h2>
+        <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>
+      </div> <!-- End Internal Header -->
       <div role="main" class="ui-content">
-        <h3>address_book</h3>
+        <table data-role="table" id="address-book-table" data-mode="" class="ui-responsive">
+         <thead>
+           <tr>
+             <th>Name</th>
+             <th>Address</th>
+             <th>Edit</th>
+           </tr>
+         </thead>
+         <tbody>
+             <tr>
+               <th>Milan</th>
+               <th>xxxxxxxxxxxxxxx</th>
+               <td><a href="AddressBookContact.html" class="ui-btn ui-mini ui-corner-all ui-btn-inline ui-icon-edit ui-btn-icon-notext" data-transition="pop">Edit</a></td>
+             </tr>
+          </tbody>
+        </table>
       </div> <!-- End Content -->
     </div> <!-- End of HOME page -->
 
