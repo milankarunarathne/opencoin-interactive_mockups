@@ -90,13 +90,48 @@
         </fieldset>
 
       </div>
-    </div> <!-- End of HOME page -->
+    </div> <!-- End of Address Book page -->
 
     <div id="settings" class="" data-role="page" data-theme="a" data-add-back-btn="true">
+      <div data-role="header" data-position="fixed" data-theme="a">
+        <h2>Address Book</h2>
+        <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>
+      </div> <!-- End Internal Header -->
+
       <div role="main" class="ui-content">
-        <h3>settings</h3>
+          <div class="ui-field-contain">
+              <fieldset data-role="controlgroup" data-type="horizontal">
+                  <legend>New Telehash ID :</legend>
+                  <button class="ui-mini ui-btn ui-corner-all ui-icon-recycle ui-btn-inline ui-btn-icon-right">One</button>
+              </fieldset>
+          </div>
+          <div class="ui-field-contain">
+              <label for="flip-1">Password Protect Wallet :</label>
+              <select name="flip-1" id="flip-1" data-role="slider" data-mini="true">
+                  <option value="off">Off</option>
+                  <option value="on">On</option>
+              </select>
+          </div>
+          <div class="ui-field-contain">
+              <label for="select-native-5">Change Currency (CDD) :</label>
+              <select name="select-native-5" id="select-native-5" data-mini="true">
+                  <option value="small">EUD</option>
+                  <option value="medium">USD</option>
+                  <option value="large">LKR</option>
+              </select>
+          </div>
+          <div class="ui-field-contain">
+              <button type="submit" id="submit-5" class="ui-shadow ui-btn ui-corner-all ui-mini">Change Password</button>
+          </div>
+
+          <div class="ui-field-contain">
+              <button type="submit" id="submit-5" class="ui-shadow ui-btn ui-corner-all ui-mini">Backup</button>
+          </div>
+          <div class="ui-field-contain">
+              <button type="submit" id="submit-5" class="ui-shadow ui-btn ui-corner-all ui-mini">Restore</button>
+          </div>
       </div> <!-- End Content -->
-    </div> <!-- End of HOME page -->
+    </div> <!-- End of Settings page -->
 
     <div data-role="panel" id="nav-panel" data-position="left" data-display="overlay" data-theme="b">
   		<ul data-role="listview">
