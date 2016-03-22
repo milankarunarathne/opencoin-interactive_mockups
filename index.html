@@ -6,6 +6,7 @@
     <title>OpenCoin Interactive Mockups</title>
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="css/customize.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
     <script src="js/jquery.js"></script>
     <script src="js/jquery.mobile-1.4.5.min.js"></script>
@@ -55,10 +56,52 @@
     </div> <!-- End of HOME page -->
 
     <div id="transactions" class="" data-role="page" data-theme="a" data-add-back-btn="true">
+      <div data-role="header" data-position="fixed" data-theme="a">
+        <h2>Trasactions</h2>
+        <a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>
+      </div> <!-- End Internal Header -->
       <div role="main" class="ui-content">
-        <h3>transactions</h3>
+        <h3>Pending</h3>
+        <table data-role="table" id="pending-transactions-table" data-mode="" class=" movie-list ui-responsive">
+         <thead>
+           <tr>
+             <th data-priority="1">Name</th>
+             <th data-priority="2">Amount</th>
+           </tr>
+         </thead>
+         <tbody>
+             <tr>
+               <th>Milan</th>
+               <th>100 OC</th>
+             </tr>
+             <tr>
+               <th>Jan</th>
+               <th>100 OC</th>
+             </tr>
+          </tbody>
+        </table>
+
+        <h3>History</h3>
+        <table data-role="table" id="transactions-history-table" data-mode="" class="movie-list ui-responsive">
+         <thead>
+           <tr>
+             <th>Name</th>
+             <th>Amount</th>
+           </tr>
+         </thead>
+         <tbody>
+             <tr>
+               <th>Milan</th>
+               <th>100 OC</th>
+             </tr>
+             <tr>
+               <th>Joerg</th>
+               <th>100 OC</th>
+             </tr>
+          </tbody>
+        </table>
       </div> <!-- End Content -->
-    </div> <!-- End of HOME page -->
+    </div> <!-- End of TRANSACTIONS page -->
 
     <div id="address_book" class="" data-role="page" data-theme="a" data-add-back-btn="true">
       <div data-role="header" data-position="fixed" data-theme="a">
